@@ -17,4 +17,6 @@ return [
     'alert' => 'Alerta',
     'confirm' => 'Confirmar',
     'cancel' => 'Cancelar',
+	'schedules' => 'Horarios',
+	'schedule' => 'Horario',
 ];

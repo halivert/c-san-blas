@@ -11,9 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/welcome.js', 'public/js')
-  .js('resources/js/marked-houses.js', 'public/js')
-  .js('resources/js/exhibitors.js', 'public/js')
-  .sass('resources/sass/safe-ocean.scss', 'public/css')
-  .extract()
-  .version();
+mix.js('resources/js/welcome.js', 'public/js');
+mix.js('resources/js/marked-houses.js', 'public/js');
+mix.js('resources/js/exhibitors.js', 'public/js');
+
+mix.sass('resources/sass/safe-ocean.scss', 'public/css');
+
+mix.extract();
+mix.version();

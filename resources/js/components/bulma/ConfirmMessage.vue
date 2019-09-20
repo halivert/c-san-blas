@@ -1,19 +1,16 @@
 <template>
   <message
     :title="title ? title : 'Alert'"
-    :has-close-button="hasCloseButton">
+    :has-close-button="hasCloseButton"
+  >
     <p style="margin-bottom: 1rem;">
-      <slot></slot>
+      <slot>{{ message }}</slot>
     </p>
     <div class="buttons is-right">
-      <button
-        @click="$emit('confirm')"
-        class="button is-success">
+      <button @click="$emit('confirm')" class="button is-success">
         {{ confirmLabel }}
       </button>
-      <button
-        @click="$emit('cancel')"
-        class="button is-danger">
+      <button @click="$emit('cancel')" class="button is-danger">
         {{ cancelLabel }}
       </button>
     </div>
@@ -28,7 +25,8 @@ export default {
     "title",
     "hasCloseButton",
     "confirmLabel",
-    "cancelLabel"
+    "cancelLabel",
+    "message"
   ],
   components: {
     Message
