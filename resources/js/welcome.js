@@ -1,4 +1,4 @@
-window.Vue = require("vue");
+require("./bootstrap");
 
 new Vue({
   el: "#app",
