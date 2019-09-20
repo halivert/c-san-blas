@@ -1,4 +1,4 @@
-window.Vue = require("vue");
+require("./bootstrap");
 import { addClass, removeClass, toggleClass } from "./helpers";
 import Modal from "./components/bulma/Modal";
 import ConfirmMessage from "./components/bulma/ConfirmMessage";

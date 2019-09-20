@@ -1,4 +1,4 @@
-window.Vue = require("vue");
+require("./bootstrap");
 import { getNumberOfHeader } from "./helpers.js";
 
 new Vue({
